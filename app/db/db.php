@@ -54,9 +54,9 @@ function insert($table, $params ){
     dbCheckError($query);
 }
 $arrData = [
-    'ФИО' => 'Gyn А.Л.',
-    'email' => 'fdfsd@gmail.com',
-    'Сообщение' => 'Push'
+    'ФИО' => 'Gynu А.Л.',
+    'email' => 'tfdfsd@gmail.com',
+    'Сообщение' => 'Some text'
 ];
 
 
