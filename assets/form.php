@@ -1,5 +1,9 @@
+<?php
 
-<!DOCTYPE html >
+include "../app/controllers/processing.php";
+
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -7,24 +11,25 @@
 </head>
 <body>
 <div id="container">
-    <form class="mainform" >
+    <form class="mainform"  method="post" action="form.php">
         <p class="name">
             <label>
-                <input type="text" name="fio" value="Имя автора" />
+                <input type="text" name="fio" />
             </label>
             <label >ФИО</label>
         </p>
 
         <p class="email">
             <label>
-                <input type="text" name="email" value="name@example.com" />
+                <input type="text" name="email"  />
             </label>
             <label >E-Mail</label>
         </p>
         <p class="msg">
             <label>
-                <textarea name="msg">Текст сообщения</textarea>
+                <textarea name="msg"></textarea>
             </label>
+            <label >Сообщение</label>
         </p>
         <p class="send" >
             <input type="submit" value="Отправить"  />

@@ -1,18 +1,21 @@
 <?php
 
+
 require 'connect.php';
 
 // тестовая функция
-function tt($value){
+function tt($value)
+{
     echo '<pre>';
     print_r($value);
     echo '</pre>';
 }
 
 // обработка ошибок
-function dbCheckError($query){
+function dbCheckError($query)
+{
     $errInfo = $query->errorInfo();
-    if($errInfo[0] !== PDO::ERR_NONE){
+    if ($errInfo[0] !== PDO::ERR_NONE) {
         echo $errInfo[2];
         exit();
     }
@@ -20,7 +23,8 @@ function dbCheckError($query){
 }
 
 // Запрос на получение данных одной таблицы
-function selectAll($table){
+function selectAll($table)
+{
     global $pdo;
     $sql = "SELECT Сообщение FROM $table";
     $query = $pdo->prepare($sql);
@@ -33,18 +37,19 @@ function selectAll($table){
 
 // Запись данных в таблицу
 
-function insert($table, $params ){
+function insert($table, $params)
+{
     global $pdo;
-    $i=0;
+    $i = 0;
     $coll = '';
     $mask = '';
-    foreach ($params as $key => $value){
-        if($i===0){
+    foreach ($params as $key => $value) {
+        if ($i === 0) {
             $coll = $coll . "$key";
-            $mask = $mask . "'$value'"  ;
-        }else{
+            $mask = $mask . "'$value'";
+        } else {
             $coll = $coll . ",$key";
-            $mask = $mask . ",'$value'" ;
+            $mask = $mask . ",'$value'";
         }
         $i++;
     }
@@ -53,11 +58,11 @@ function insert($table, $params ){
     $query->execute($params);
     dbCheckError($query);
 }
-$arrData = [
+
+/*$arrData = [
     'ФИО' => 'Gynu А.Л.',
     'email' => 'tfdfsd@gmail.com',
     'Сообщение' => 'Some text'
-];
+];*/
 
-
-insert('users', $arrData);
+/*insert(users, $arrData);*/
