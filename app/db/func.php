@@ -31,7 +31,7 @@ function selectAll($table)
     $query->execute();
 
     dbCheckError($query);
-    return $query->fetch();
+    return $query->fetchall();
 
 }
 

@@ -34,6 +34,15 @@ include "../app/controllers/processing.php";
         <p class="send" >
             <input type="submit" value="Отправить"  />
         </p>
+
+    <?php foreach ($ccc as $key => $msg):?>
+
+
+        <div>
+            <p ><?=$msg['Сообщение'];?> </p>
+        </div>
+       <?php endforeach;?>
+
     </form>
 </div>
 </body>

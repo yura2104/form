@@ -1,7 +1,6 @@
 <?php
 
-/*include "C:/Program Files/Ampps/www/form/app/db/func.php";*/
-/*include "../db/func.php";*/
+
 
 $path = $_SERVER['DOCUMENT_ROOT'];
 $path .= "/form/app/db/func.php";
@@ -22,8 +21,15 @@ if (isset($_POST['fio'])){
    ];
 
    insert('users', $post);
-
 }
+
+
+
+
+ $ccc =  selectAll('users');
+ /* tt($ccc);
+  exit();*/
+
 
 
 
