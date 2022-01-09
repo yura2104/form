@@ -1,12 +1,8 @@
 <?php
 
-
-
 $path = $_SERVER['DOCUMENT_ROOT'];
 $path .= "/form/app/db/func.php";
 include_once($path);
-
-
 
 
 if (isset($_POST['fio'])){
@@ -14,21 +10,13 @@ if (isset($_POST['fio'])){
     $email = $_POST['email'];
     $message = $_POST['msg'];
 
-   $post =[
-       'ФИО' => $name,
-       'email' => $email,
-       'Сообщение' => $message
-   ];
-
-   insert('users', $post);
+    $post =[
+        'ФИО' => $name,
+        'email' => $email,
+        'Сообщение' => $message
+    ];
+    insert('users', $post);
 }
-
-
-
-
- $ccc =  selectAll('users');
- /* tt($ccc);
-  exit();*/
 
 
 

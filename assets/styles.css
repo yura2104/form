@@ -1,0 +1,33 @@
+
+.container {
+  width: 750px;
+  height: 300px; 
+  padding: 50px;
+  border: 3px double #1e8cbe;
+  border-radius: 12px;
+  margin: 20px auto;
+}
+
+input {
+ display:block;
+ margin:0 auto;
+ width:  300px;
+height: 25px;
+}
+
+label {
+  margin-right: 100px;
+
+  color: red;
+}
+textarea{
+ display:block;
+ margin:0 auto;
+ width:  400px;
+height: 100px;
+resize: none;
+}
+#formMassage {
+  text-align: center;
+  color: red;
+}

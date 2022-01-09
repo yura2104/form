@@ -59,10 +59,5 @@ function insert($table, $params)
     dbCheckError($query);
 }
 
-/*$arrData = [
-    'ФИО' => 'Gynu А.Л.',
-    'email' => 'tfdfsd@gmail.com',
-    'Сообщение' => 'Some text'
-];*/
 
-/*insert(users, $arrData);*/
+
