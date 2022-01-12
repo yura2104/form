@@ -53,10 +53,15 @@ function insert($table, $params)
         }
         $i++;
     }
+
     $sql = "INSERT INTO $table ($coll) VALUES ($mask)";
     $query = $pdo->prepare($sql);
     $query->execute($params);
     dbCheckError($query);
+
+
+
+
 }
 
 

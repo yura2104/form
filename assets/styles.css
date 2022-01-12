@@ -1,4 +1,4 @@
-
+/*
 .container {
   width: 750px;
   height: 300px; 
@@ -6,7 +6,7 @@
   border: 3px double #1e8cbe;
   border-radius: 12px;
   margin: 20px auto;
-}
+}*/
 
 input {
  display:block;
@@ -15,10 +15,11 @@ input {
 height: 25px;
 }
 
-label {
-  margin-right: 100px;
-
-  color: red;
+label{
+   margin: 48%;
+    
+   
+ 
 }
 textarea{
  display:block;
@@ -28,6 +29,69 @@ height: 100px;
 resize: none;
 }
 #formMassage {
-  text-align: center;
-  color: red;
+
+   display:block;
+text-align: center;
+ width: 750px;
+  border: 3px double #1e8cbe;
+  border-radius: 12px;
+  margin: 1px auto;
 }
+
+/*
+#container {
+ margin: 0 auto;
+ border: 3px solid #EEEEEE;
+ width: 800px;
+ -webkit-birder-radius: 6px;
+ -moz-border-radius: 6px;
+}
+*/
+
+/*input, textarea {
+ border: solid 1px #CCCCCC;
+ margin-left: 10px;
+ padding: 4px;
+ outline: 0;
+ font: Verdana, Geneva, sans-serif;
+ width: 200px;
+ background: #F9F9F9;
+ -webkit-birder-radius: 4px;
+ -moz-border-radius: 4px;
+}
+
+p label {
+ margin-left: 10px;
+ font-style: italic;
+ color: #c0c0c0;
+}
+
+.name input {
+ margin-top: 10px;
+}
+
+
+textarea {
+ width: 400px;
+ height: 150px;
+ line-height: 150%;
+}
+
+
+.send input {
+ width: auto;
+ margin-bottom: 10px;
+ border: 2px solid #E0E0F3;
+ font: Verdana, Geneva, sans-serif;
+ background-color: #E5E5F8;
+}
+
+
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+ border-color: #A0A0A0;
+}
+
+.send input:hover {
+ border: 2px solid #C0C0E3;
+}*/

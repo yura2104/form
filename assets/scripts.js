@@ -11,6 +11,7 @@ form.addEventListener('submit', function(evt) {
     };
 
 
+
     /*  console.log(formData);*/
     var request = new XMLHttpRequest();
 
