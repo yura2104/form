@@ -1,5 +1,4 @@
 var form = document.querySelector('#myForm');
-
 form.addEventListener('submit', function (evt) {
     evt.preventDefault();
     var formData = {

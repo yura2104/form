@@ -1,5 +1,6 @@
 <?php
 
+
 $driver = 'mysql';
 $host = 'localhost';
 $db_name = 'form';

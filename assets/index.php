@@ -3,6 +3,7 @@ $path = $_SERVER['DOCUMENT_ROOT'];
 $path .= "/form/app/controllers/processing.php";
 include_once($path);
 ?>
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>

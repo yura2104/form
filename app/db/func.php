@@ -1,4 +1,5 @@
 <?php
+
 require 'connect.php';
 // тестовая функция
 function tt($value)
