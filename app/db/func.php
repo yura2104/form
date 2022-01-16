@@ -1,8 +1,5 @@
 <?php
-
-
 require 'connect.php';
-
 // тестовая функция
 function tt($value)
 {
@@ -26,13 +23,11 @@ function dbCheckError($query)
 function selectAll($table)
 {
     global $pdo;
-    $sql = "SELECT Сообщение FROM $table";
+    $sql = "SELECT Сообщение, ФИО FROM $table";
     $query = $pdo->prepare($sql);
     $query->execute();
-
     dbCheckError($query);
     return $query->fetchall();
-
 }
 
 // Запись данных в таблицу
@@ -53,15 +48,10 @@ function insert($table, $params)
         }
         $i++;
     }
-
     $sql = "INSERT INTO $table ($coll) VALUES ($mask)";
     $query = $pdo->prepare($sql);
     $query->execute($params);
     dbCheckError($query);
-
-
-
-
 }
 
 
